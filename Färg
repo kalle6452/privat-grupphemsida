@@ -1,0 +1,33 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+grid-template-rows: 150px 150px 150px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-area: 1 / 2 / span 1 / span 2;
+  background-color: #FF0000
+}
+.item3 {
+  grid-area: 2 / 3 / span 2 / span 1;
+  background-color: #000000
+}
+.item5 {
+  grid-area: 2 / 2 / span 1 / span 1;
+  background-color: #FFFF00
+}
+.item6 {
+  grid-area: 3 / 1 / span 1 / span 2;
+background-color: #7FFF00
+}
+.item7 {
+  grid-area: 1 / 1 / span 2 / span 1;
+  background-color: #87
+}
