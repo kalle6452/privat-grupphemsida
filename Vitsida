@@ -1,0 +1,52 @@
+/*Innehåll för grid, ett system för att organisera saker på en hemsida.*/
+.grid-container {
+/*Aktiverar grid*/
+  display: grid;
+/*Sätter upp kolumner som man kan använda sig av för att objekt på hemsidan
+ska få en mer exakt position, i det här fallet fem stycken kolumner där samtliga
+är 400pixlar lång.*/
+  grid-template-columns: 400px 400px 400px 400px 100px;
+grid-template-rows: 150px 150px 150px 700px;
+  padding: 10px;
+}
+.grid-container > div {
+  text-align: center;
+  font-size: 30px;
+}
+.item1 {
+  grid-area: 1 / 2 / span 1 / span 2;
+  background-color: #FF0000
+}
+.item3 {
+  grid-area: 2 / 3 / span 2 / span 1;
+  background-color: #000000
+}
+.infosida {
+  grid-area: 1 / 2 / span 5 / span 3;
+  background-color: #FFFFFF
+}
+.item6 {
+  grid-area: 3 / 1 / span 1 / span 2;
+background-color: #7FFF00
+}
+.item7 {
+  grid-area: 1 / 1 / span 2 / span 1;
+  background-color: #87
+}
+  body {
+  background-image : url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2101625.jpg&f=1&nofb=1");
+  }
+h1 {
+  color: rgba(82, 99, 71, 0.4);
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-item {
+  font-size: 200%;
+  color: rgba(82, 99, 71, 0.2);
+  text-align: center;
+}
